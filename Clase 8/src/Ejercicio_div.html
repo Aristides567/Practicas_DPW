@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta 3D - Efecto como en el video</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100 p-4">
+    <div class="card-container w-80 h-96">
+        <div id="card" class="card w-full h-full">
+            <!-- Parte frontal -->
+            <div class="card-face bg-white rounded-xl shadow-xl flex flex-col items-center justify-center p-6">
+                <h2 class="text-xl font-bold">Parte de enfrente</h2>
+                <p>Contenido de inicio</p>
+                    <span class="opacity-80 text-gray-700">Hacer click aqui</span>
+            </div>
+            
+            <!-- Parte trasera -->
+            <div class="text-center card-face card-back bg-gradient-to-br from-blue-600 to-blue-400 rounded-xl shadow-xl text-white p-6 flex flex-col justify-center">
+                <h2 class="text-xl font-bold">Parte de atras</h2>
+                <p>Contenido de secundario</p>
+                <span class="text-gray-700">Hacer click aqui</span>
+            </div>
+        </div>
+    </div>
+    <script src="./tailwind.config.js"></script>
+</body>
+</html>
