@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Master</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <style>
+        .grid-item{
+            transition: all 0.3s ease;
+        }
+        .grid-item:hover{
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-r from-blue-900 to-indigo-600 min-h-screen font-sans text-white">
+    <header class="container mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+            <div class="md:col-span-1">
+                <h1 class="text-4xl font-bold">Grid Expert</h1>
+                <p class="text-blue-200">Potencia y Flexibilidad con TailwindCSS</p>
+            </div>
+            <nav class="md:col-span-2">
+                <ul class="grid grid-cols-3 gap-3 text-center">
+                    <li class="bg-blue-800 bg-opacity-50 py-2 rounded-lg hover:bg-opacity-70 cursor-pointer transition">Inicio</li>
+                    <li class="bg-blue-800 bg-opacity-50 py-2 rounded-lg hover:bg-opacity-70 cursor-pointer transition">Ejemplos</li>
+                    <li class="bg-blue-800 bg-opacity-50 py-2 rounded-lg hover:bg-opacity-70 cursor-pointer transition">Contacto</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+                <h2 class="text-5xl font-bold mb-4">Domina el Sistema Grid</h2>
+                <p class="text-xl text-blue-200 mb-6">Crea diseños complejos y responsivos con el poder de CSS Grid implementado en Tailwind</p>
+                <button class="bg-gradient-to-r from-indigo-500 to-blue-600 px-8 py-3 rounded-lg text-lg font-semibold hover:from-indigo-400 hover:to-blue-700 transition-all">Explorar más</button>
+            </div>
+
+            <div class="grid grid-cols-4 grid-rows-4 gap-3 h-72">
+                <div class="bg-indigo-500 rounded-xl col-span-2 row-span-2 flex items-center justify-center text-xl font-bold shadow-lg">2x2</div>
+                <div class="bg-blue-700 rounded-xl col-span-2 row-span-1 flex items-center justify-center text-xl font-bold shadow-lg">2x1</div>
+                <div class="bg-blue-500 rounded-xl col-span-1 row-span-1 flex items-center justify-center text-xl font-bold shadow-lg">1x1</div>
+                <div class="bg-indigo-400 rounded-xl col-span-1 row-span-2 flex items-center justify-center text-xl font-bold shadow-lg">1x2</div>
+                <div class="bg-blue-600 rounded-xl col-span-3 row-span-1 flex items-center justify-center text-xl font-bold shadow-lg">3x1</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold text-center mb-12">Características del Grid en Tailwind</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <div class="grid-item bg-gradient-to-br from-blue-800 to-blue-600 p-6 rounded-xl shadow-md">
+                <h3 class="text-xl font-bold mb-3">Grid Template Columns</h3>
+                <p class="text-blue-200">Define el número y tamaño de columnas con grid-cols-{n}</p>
+            </div>
+
+            <div class="grid-item bg-gradient-to-br from-indigo-700 to-indigo-600 p-6 rounded-xl shadow-md">
+                <h3 class="text-xl font-bold mb-3">Grid Columns Span</h3>
+                <p class="text-blue-200">Controla cuántas columnas ocupa un elemento</p>
+            </div>
+
+            <div class="grid-item bg-gradient-to-br from-blue-600 to-blue-500 p-6 rounded-xl shadow-md">
+                <h3 class="text-xl font-bold mb-3">Grid Template Rows</h3>
+                <p class="text-blue-200">Define filas con grid-rows-{n}</p>
+            </div>
+
+            <div class="grid-item bg-gradient-to-br from-indigo-600 to-blue-600 p-6 rounded-xl shadow-md">
+                <h3 class="text-xl font-bold mb-3">Espaciado</h3>
+                <p class="text-blue-200">Añade espacio entre elementos con gap-{size}</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
