@@ -38,31 +38,3 @@
         </form>
     </div>
 </template>
-<style scoped>
-.calculator {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-input[type="date"] {
-    padding: 8px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-}
-
-.resultado {
-    text-align: center;
-}
-
-.mayor {
-    color: green;
-    font-weight: bold;
-}
-
-.menor {
-    color: red;
-    font-weight: bold;
-}
-</style>

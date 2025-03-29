@@ -31,28 +31,3 @@ const tareas = ref([
   </div>
 </template>
 
-<style scoped>
-.lista-tareas {
-  max-width: 600px;
-  padding-top: 300px;  
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  margin: 10px 0;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-input[type="checkbox"] {
-  margin-right: 10px;
-}
-</style>
