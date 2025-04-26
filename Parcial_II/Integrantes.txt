@@ -1,0 +1,4 @@
+Aristides Alfonso Fuentes Cañas / U20230349
+Rene Alejandro Vasquez Ochoca / U20230402
+
+*Se uso el gestor de paquetes pnpm
